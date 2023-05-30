@@ -2,6 +2,13 @@
 const express = require('express');
 // Create the router instance
 const messageRouter = express.Router();
+// import the methos from the controllers
+const getMessage = require('../controllers/messages-controller')
+
+messageRouter.get('/controller-message', (request, response) => {
+    message = getMessage()
+    response.json(message)
+})
 
 messageRouter.get('/html-greeting', (request, response) => {
     response.send(`<h3>Hello students!</h3>`)
