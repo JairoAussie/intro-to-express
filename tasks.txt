@@ -1,0 +1,11 @@
+- init npm and git
+- gitignore node modules
+- install express and nodemon
+- basic server with ExpressJS
+- node vs nodemon - script in package.json
+- HTTP verbs
+- responses (text, json, html)
+
+- refactoring
+- routing
+- MVC
